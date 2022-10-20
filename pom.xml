@@ -8,11 +8,11 @@
         <version>2.5.6</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.psycho</groupId>
-    <artifactId>psychohelp-api</artifactId>
+    <groupId>com.nutrix</groupId>
+    <artifactId>nutrix-api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>psychohelp-api</name>
-    <description>psychohelp-api</description>
+    <name>nutrix-api</name>
+    <description>nutrix-api</description>
     <properties>
         <java.version>8</java.version>
     </properties>

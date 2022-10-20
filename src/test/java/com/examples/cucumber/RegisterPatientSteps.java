@@ -1,6 +1,6 @@
 package com.examples.cucumber;
 
-import com.psycho.psychohelp.patient.domain.model.entity.Patient;
+import com.codetech.nutrix.patient.domain.model.entity.Patient;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -12,7 +12,6 @@ import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.Random;
-import java.util.logging.Logger;
 
 import static org.junit.jupiter.api.Assertions.*;
 

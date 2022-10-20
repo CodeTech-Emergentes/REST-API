@@ -1,4 +1,4 @@
-# psycho-help
+# nutrix
 
 ## Project setup
 ```

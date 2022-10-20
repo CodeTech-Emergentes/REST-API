@@ -1,8 +1,6 @@
 package com.examples.cucumber;
 
-import com.psycho.psychohelp.patient.domain.model.entity.Patient;
-import com.psycho.psychohelp.psychologist.domain.model.entity.Psychologist;
-import com.psycho.psychohelp.publication.domain.model.entity.Publication;
+import com.codetech.nutrix.publication.domain.model.entity.Publication;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -13,7 +11,6 @@ import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 
-import java.util.Date;
 import java.util.Random;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -45,7 +42,7 @@ public class PostPublicationSteps {
     }
     @And("I post a publication with title {string}, description {string}, tags {string}, photo {string} and content {string}")
     public void i_post_a_publication_with_title_description_tags_photo_and_content(String title, String description, String tags, String photo, String content) {
-        String publicationUrl=url + "/publications/psychologists/" + 1L;
+        String publicationUrl=url + "/publications/nutritionists/" + 1L;
 
         Publication newPublication = new Publication(publicationId, title, description, tags, photo, content);
         publication=restTemplate.postForObject(publicationUrl,newPublication,Publication.class);
